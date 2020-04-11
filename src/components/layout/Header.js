@@ -5,7 +5,7 @@ import Button from '../Button';
 
 const Header = () => (
   <header className="sticky top-0 bg-indigo-200 shadow">
-    <div className="container flex text-blue-700 flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
+    <div className="container flex text-blue-700 flex-col sm:flex-row justify-between items-center mx-auto py-2 px-8">
       <div className="flex mt-4 sm:mt-0">
         <AnchorLink className="px-4 text-black" href="#features">
           Features

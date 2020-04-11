@@ -9,26 +9,30 @@ import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
-import { TiWeatherStormy } from 'react-icons/ti';
+import { motion } from "framer-motion";
 
 export default () => (
   <Layout>
-    <section className="pt-20 md:pt-40">
+    <section className="pt-20 md:pt-35">
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
-            Ba'al
-          </h1>
-          <p className="text-xl lg:text-2xl mt-6 font-light">
-            Machine Learning integrated with the Weather
-          </p>
-          <p className="mt-8 md:mt-12">
-            <Button size="lg">Get Started</Button>
-          </p>
+          <motion.div animate={{ x: 100 }}>
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+                Ba'al
+              </h1>
+              <p className="text-xl lg:text-xl mt-4 font-light">
+                Machine Learning integrated with the Weather
+              </p>
+              <p className="mt-8 md:mt-12">
+                <Button size="lg">Get Started</Button>
+              </p> 
+          </motion.div>
         </div>
-        <div className="lg:w-1/2">
-          <HeroImage />
-        </div>
+
+
+          <link rel="stylesheet" href="animate.min.css" src="../images/hero-image.png" />
+
+
       </div>
     </section>
     <section id="features" className="py-20 lg:pb-40 lg:pt-48">
