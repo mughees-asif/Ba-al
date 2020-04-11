@@ -28,11 +28,10 @@ export default () => (
               </p> 
           </motion.div>
         </div>
-
-
-          <link rel="stylesheet" href="animate.min.css" src="../images/hero-image.png" />
-
-
+         // replace image
+        <motion.div animate={{ x: 100 }}>
+          <HeroImage />
+        </motion.div>
       </div>
     </section>
     <section id="features" className="py-20 lg:pb-40 lg:pt-48">
